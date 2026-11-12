@@ -75,14 +75,26 @@ namespace c_basics_session02
 
 
 
-            double price = 49.99;
-            int copyPrice = (int)price;
-            Console.WriteLine(copyPrice);
+            //double price = 49.99;
+            //int copyPrice = (int)price;
+            //Console.WriteLine(copyPrice);
 
 
 
             #endregion
 
+            #region Question 6
+
+
+            //Given string pagesText = "464";, convert it into an int using the Convert class.
+
+
+            string pagesText = "464";
+            int pages = Convert.ToInt32(pagesText);
+            Console.WriteLine(pages.GetType());
+
+
+            #endregion
 
         }
     }
