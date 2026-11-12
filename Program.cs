@@ -33,31 +33,42 @@ namespace c_basics_session02
             //Console.WriteLine(book.GetType());
 
             #endregion
+
             #region Question 3
 
             //Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot
             // divide by zero", and then prints "Done" in a finally block.
 
-            try
-            {
-                int num1 = 0;
-                int num2 = 10 / num1;
-            }
-            catch (DivideByZeroException ex)
-            {
-                Console.WriteLine("Cannot divide by Zero");
-                Console.WriteLine(ex.Message);
+            //try
+            //{
+            //    int num1 = 0;
+            //    int num2 = 10 / num1;
+            //}
+            //catch (DivideByZeroException ex)
+            //{
+            //    Console.WriteLine("Cannot divide by Zero");
+            //    Console.WriteLine(ex.Message);
 
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Cannot divide by Zero");
-                Console.WriteLine(ex.Message);
-            }
-            finally { Console.WriteLine("Done"); }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine("Cannot divide by Zero");
+            //    Console.WriteLine(ex.Message);
+            //}
+            //finally { Console.WriteLine("Done"); }
 
 
             #endregion
+
+            #region Question 4
+            //Declare an int pages = 300; then store it in a double variable without using a cast.
+
+            int pages = 300;
+            double copyPages = pages;
+
+
+            #endregion
+
 
         }
     }
