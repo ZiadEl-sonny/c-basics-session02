@@ -172,14 +172,28 @@ namespace c_basics_session02
             //to assign title the value "Untitled" only if it's still null.
 
             //task12 & 13
-            Book book?= null;
-            Console.WriteLine(book?.Title);
+
+            //Book book?= null;
+            //Console.WriteLine(book?.Title);
 
 
-            book.Title ??= "Untitled";
-            Console.WriteLine(book.Title);
+            //book.Title ??= "Untitled";
+            //Console.WriteLine(book.Title);
 
             #endregion
+
+            #region Question 14
+
+            //Given string? name = "Ahmed"; (you are sure it's not null here), assign it to a non-nullable
+            //string confirmedName using the ! operator.
+
+            string name = "Ahmed";
+
+            string confirmedName = name!;
+
+            #endregion
+
+
 
         }
     }
