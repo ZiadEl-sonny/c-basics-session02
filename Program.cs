@@ -157,8 +157,27 @@ namespace c_basics_session02
 
             //Declare a string? reviewer = null;. Print whether it is null.
 
-            string? reviewer = null;
-            Console.WriteLine(reviewer == null);
+            //string? reviewer = null;
+            //Console.WriteLine(reviewer == null);
+
+            #endregion
+
+            #region Question 12&13
+
+            //Declare a Book? book = null;. Use ?. to safely read book.Title without crashing the
+            // program, and print the result.
+
+
+            //Using title from the previous question, use ?? to print "Untitled" if title is null. Then use ??=
+            //to assign title the value "Untitled" only if it's still null.
+
+            //task12 & 13
+            Book book?= null;
+            Console.WriteLine(book?.Title);
+
+
+            book.Title ??= "Untitled";
+            Console.WriteLine(book.Title);
 
             #endregion
 
