@@ -187,11 +187,13 @@ namespace c_basics_session02
             //Given string? name = "Ahmed"; (you are sure it's not null here), assign it to a non-nullable
             //string confirmedName using the ! operator.
 
-            string name = "Ahmed";
+            //string name = "Ahmed";
 
-            string confirmedName = name!;
+            //string confirmedName = name!;
 
             #endregion
+
+
 
 
 
