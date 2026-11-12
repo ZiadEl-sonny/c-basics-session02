@@ -63,8 +63,22 @@ namespace c_basics_session02
             #region Question 4
             //Declare an int pages = 300; then store it in a double variable without using a cast.
 
-            int pages = 300;
-            double copyPages = pages;
+            //int pages = 300;
+            //double copyPages = pages;
+
+
+            #endregion
+
+            #region Question 5
+
+            //Declare a double price = 49.99; then convert it into an int using a cast.
+
+
+         
+            double price = 49.99;
+            int copyPrice = (int)price;
+            Console.WriteLine(copyPrice);
+
 
 
             #endregion
