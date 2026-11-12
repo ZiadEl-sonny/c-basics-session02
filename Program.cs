@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -24,12 +25,37 @@ namespace c_basics_session02
             #region Question 2
             //Using the Book class above, print the result of calling ToString(), Equals() (compare book
             //with itself), GetHashCode(), and GetType() on book.
-            Book book = new Book();
+            //Book book = new Book();
 
-            Console.WriteLine(book.ToString());
-            Console.WriteLine(book.Equals(book));
-            Console.WriteLine(book.GetHashCode());
-            Console.WriteLine(book.GetType());
+            //Console.WriteLine(book.ToString());
+            //Console.WriteLine(book.Equals(book));
+            //Console.WriteLine(book.GetHashCode());
+            //Console.WriteLine(book.GetType());
+
+            #endregion
+            #region Question 3
+
+            //Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot
+            // divide by zero", and then prints "Done" in a finally block.
+
+            try
+            {
+                int num1 = 0;
+                int num2 = 10 / num1;
+            }
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine("Cannot divide by Zero");
+                Console.WriteLine(ex.Message);
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Cannot divide by Zero");
+                Console.WriteLine(ex.Message);
+            }
+            finally { Console.WriteLine("Done"); }
+
 
             #endregion
 
