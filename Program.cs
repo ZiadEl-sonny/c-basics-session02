@@ -74,7 +74,7 @@ namespace c_basics_session02
             //Declare a double price = 49.99; then convert it into an int using a cast.
 
 
-         
+
             double price = 49.99;
             int copyPrice = (int)price;
             Console.WriteLine(copyPrice);
