@@ -145,11 +145,20 @@ namespace c_basics_session02
             //Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its
             //value.
 
-            int? Year = null;
-            Console.WriteLine(Year.HasValue);
+            //int? Year = null;
+            //Console.WriteLine(Year.HasValue);
 
-            Year = 2026;
-            Console.WriteLine(Year.Value);
+            //Year = 2026;
+            //Console.WriteLine(Year.Value);
+
+            #endregion
+
+            #region Question 11
+
+            //Declare a string? reviewer = null;. Print whether it is null.
+
+            string? reviewer = null;
+            Console.WriteLine(reviewer == null);
 
             #endregion
 
