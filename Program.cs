@@ -119,13 +119,25 @@ namespace c_basics_session02
             //Given int pages = 464;, convert it into a string using ToString() and print its type using
             //GetType() to prove it's now a string.
 
-            int pages = 464;
-            string pages2 = pages.ToString();
-            Console.WriteLine(pages2.GetType());
+            //int pages = 464;
+            //string pages2 = pages.ToString();
+            //Console.WriteLine(pages2.GetType());
 
             #endregion
 
+            #region Question 9
+            //Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int
+            //variable, and print both.
 
+
+            int copies = 300;
+            object copiesOBJ = copies;
+            int unboxedCopies = (int)copiesOBJ;
+            Console.WriteLine(unboxedCopies.GetType());
+            Console.WriteLine(copiesOBJ.GetType());
+
+
+            #endregion
 
 
         }
