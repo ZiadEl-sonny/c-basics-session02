@@ -130,15 +130,28 @@ namespace c_basics_session02
             //variable, and print both.
 
 
-            int copies = 300;
-            object copiesOBJ = copies;
-            int unboxedCopies = (int)copiesOBJ;
-            Console.WriteLine(unboxedCopies.GetType());
-            Console.WriteLine(copiesOBJ.GetType());
+            //int copies = 300;
+            //object copiesOBJ = copies;
+            //int unboxedCopies = (int)copiesOBJ;
+            //Console.WriteLine(unboxedCopies.GetType());
+            //Console.WriteLine(copiesOBJ.GetType());
 
 
             #endregion
 
+            #region Question 10
+
+
+            //Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its
+            //value.
+
+            int? Year = null;
+            Console.WriteLine(Year.HasValue);
+
+            Year = 2026;
+            Console.WriteLine(Year.Value);
+
+            #endregion
 
         }
     }
